@@ -1,0 +1,11 @@
+package com.company;
+
+public class arrary {
+    public static void main(String[] args) {
+        int [] array = { 12,23,34,45,56,};
+        for(int i =4; i>=0; i--)
+        {
+            System.out.printf("roll no is %d\n",array[i]);
+        }
+    }
+}
