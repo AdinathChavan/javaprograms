@@ -1,0 +1,18 @@
+package com.company;
+
+
+public class average {
+    static float avg(int ...a){
+        int sum=0;
+        for(int b :a)
+        {
+            sum=sum+b;
+        }
+        return sum/7.f;
+
+    }
+
+    public static void main(String[] args) {
+        System.out.printf("Average of number is %.2f",avg(12,23,67,89,76,54));
+    }
+}
