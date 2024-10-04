@@ -1,0 +1,14 @@
+package com.company;
+
+public class question2 {
+    public static void main(String[] args)
+    {
+        char b = 'A';
+        b= (char)(b+8);
+        System.out.println(b);
+        b= (char)(b-8);
+        System.out.println(b);
+
+
+    }
+}
