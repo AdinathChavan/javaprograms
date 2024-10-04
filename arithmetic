@@ -1,0 +1,13 @@
+package com.company;
+
+public class question4 {
+    public static void main(String[] args)
+    {
+        int v= 23;
+        int u= 21;
+        int a=2;
+        int s= 3;
+        int c= (v*v)-(u*u)/(2*a*s);
+        System.out.println(c);
+    }
+}
