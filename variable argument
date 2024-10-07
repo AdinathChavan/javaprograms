@@ -1,0 +1,26 @@
+package com.company;
+import java.util.Scanner;
+
+public class vargument {
+    static void sum(int...a){
+        int sum =0;
+        for(int b : a)
+        {
+            sum=sum+b;
+        }
+        System.out.printf("Sum of the elements is %d",sum);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+       // System.out.println("Enter number of elements you add");
+        //int b = sc.nextInt();
+    //int []a = new int[b];
+      //for(int i=0; i<=b; i++)
+      //{
+        //   a[i] = sc.nextInt();
+      //}
+      sum(12,34,67,78);
+
+    }
+}
