@@ -1,0 +1,18 @@
+package Apnacollege.code;
+public class variable{
+    public static void main(String[] args)
+    {
+        int a = 234; // 4 bytes
+        short h = 23412; // 2 bytes
+        float b = 334.4f;// 4 bytes
+        byte d = 1;  // 1 byte
+        double f = 1344143.3143f;// 8 bytes
+        long s = 214324153333334L;//8 bytes
+        char c= 'c';// 1 byte
+        boolean t = true;//1 bit
+
+
+
+
+    }
+}
