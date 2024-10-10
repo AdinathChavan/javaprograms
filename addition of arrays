@@ -1,0 +1,22 @@
+package Apnacollege.code;
+
+public class arrayaddition {
+    static void addition(int []a, int []b){
+        int []c = new int[5];
+        for(int i=0; i<5; i++)
+        {
+            c[i] = b[i]+a[i];
+            System.out.println(c[i]);
+        }
+
+    }
+
+    public static void main(String[] args) {
+        //int []array = new int[5];
+        //int []arrayb = new int[5];
+         int []array = { 12,23,34,45,56,};
+         int []arrayb = {34, 23, 56,75,79};
+        System.out.println("Addition of the array elements");
+        addition(array, arrayb);
+    }
+}
