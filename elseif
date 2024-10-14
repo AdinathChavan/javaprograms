@@ -1,0 +1,25 @@
+package Apnacollege.code;
+import java.util.Scanner;
+
+public class elseif {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a>90)
+        {
+            System.out.println("Science");
+        }
+        else if ( a<90)
+        {
+            System.out.println("Commerce");
+        }
+        else if(a<70)
+        {
+            System.out.println("Arts");
+        }
+        else {
+            System.out.printf("failed cannot appear");
+        }
+    }
+}
