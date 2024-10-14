@@ -1,0 +1,29 @@
+package Apnacollege.code;
+import java.util.Scanner;
+
+public class Switch {
+    public static void main(String[] args) {
+
+        System.out.println("Enter your choice");
+        System.out.println("kabbadi - 1\n kho-kho - 2\n cricket -3\n tennis - 4\n");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        switch(a)
+        {
+            case 1 :
+                System.out.println("kabbadi");
+                break;
+            case 2:
+                System.out.println("kho-kho");
+                break;
+            case 3:
+                System.out.println("Cricket");
+                break;
+            case 4:
+                System.out.println("tennis");
+                break;
+            default :
+                System.out.println("Enter valid choice");
+        }
+    }
+}
