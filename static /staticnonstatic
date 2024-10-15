@@ -1,0 +1,17 @@
+package Apnacollege.code;
+
+public class staticnonstatic{
+    static String companyname = "Apple";
+    static int Year = 2012;
+    String employee="Adinath Chavan";
+    int id= 8769;
+    public static void main(String[] args)
+    {
+    System.out.println(companyname);
+    System.out.println(Year);
+    staticnonstatic adinath = new staticnonstatic();
+        System.out.println(adinath.id);
+        System.out.println(adinath.employee);
+    }
+}
+
