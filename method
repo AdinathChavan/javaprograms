@@ -1,0 +1,14 @@
+package Apnacollege.code;
+
+public class method {
+    static int addition()
+    {
+        int a =234;
+        int b =3434;
+        int c = a+b;
+        return c;
+    }
+    public static void main(String[] args){
+        System.out.printf("Addition is %d",addition());
+    }
+}
