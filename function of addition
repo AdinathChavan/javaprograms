@@ -1,0 +1,14 @@
+package javaprograms;
+public class {
+static int addition(int a, int b){
+  int c = a+b;
+return c ;
+}
+
+public static void main(String[] args)
+{
+  int a = 23;
+  int b = 34;
+System.out.printf("Addition is %d",addition(a,b)
+}
+}
