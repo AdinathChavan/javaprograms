@@ -1,0 +1,28 @@
+package Apnacollege.code;
+import java.util.Scanner;
+class arrayjava{
+    static int addition( int a[]){
+        int sum =0;
+        for(int i=0; i<10; i++)
+        {
+            sum = sum+a[i];
+        }
+        return sum;
+    }
+
+
+}
+
+public class arrayclass {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int []a = new int[10];
+        System.out.println("Enter elements of array");
+        for(int i=0; i<10; i++)
+        {
+            a[i] = sc.nextInt();
+        }
+        System.out.printf("Addition of array elements are %d ",arrayjava.addition(a));
+
+    }
+}
