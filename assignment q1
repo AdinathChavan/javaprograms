@@ -1,0 +1,19 @@
+package Apnacollege.code;
+
+public class question {
+  static void bankdetails(){
+        String Bankname = "Union bank of India";
+        String IFSCcode = "UBIN28571903";
+        int registerno = 23451;
+        double balance = 4747291;
+
+        System.out.println(Bankname);
+        System.out.println(registerno);
+        System.out.println(balance);
+    }
+    public static void main(String[] args) {
+        System.out.println("........Bank Details of the Person.........");
+        bankdetails();
+
+    }
+}
