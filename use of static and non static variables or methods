@@ -1,0 +1,14 @@
+package Apnacollege.code;
+
+public class abc {
+    static int registerno = 12342;
+    String personname = "Adinath";
+
+    public static void main(String[] args) {
+        System.out.println("register numbers of student "+registerno);
+        abc newabc = new abc();
+        System.out.println("Name of the student "+newabc.personname);
+    }
+}
+// from static method we can access only static methods or variables.
+// for acccessing a non static variable or method from static method we have to require object ( object.variable name)
