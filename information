@@ -1,0 +1,15 @@
+public class email {
+    static void info(){
+        String name = "Adinath Chavan";
+        String mobileno = "9307685722";
+        String Emailid = "adinath4356@gmail.com";
+        System.out.println(name);
+        System.out.println(mobileno);
+        System.out.println(Emailid);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("information of the person");
+        info();
+    }
+}
