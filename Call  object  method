@@ -1,0 +1,16 @@
+package Apnacollege.code;
+
+public class classcalling {
+    public static void main(String[] args) {
+        abc substin = new abc();
+        System.out.println(substin.personname);//personname is non-static hence required object creation.
+        System.out.println(abc.registerno);// registerno is static hence no object creation required.
+       int result =  abc.addition(123,2341);//static method hence no object creation required.
+        System.out.println(result);
+    }
+}
+/* To call method from other class  case 1 - static to static method ( no creation of object required )
+                                    case 2 - static to non-static method( creation of obeject required )
+                                    case 3 - non-static to static method (no required)
+                                    case 4 - non-static to non-static method (no required)
+ */
