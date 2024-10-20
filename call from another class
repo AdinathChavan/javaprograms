@@ -1,0 +1,9 @@
+package Apnacollege.code;
+
+public class classcalling {
+    public static void main(String[] args) {
+        abc substin = new abc();
+        System.out.println(substin.personname);
+        System.out.println(abc.registerno);
+    }
+}
