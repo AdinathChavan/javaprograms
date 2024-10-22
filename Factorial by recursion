@@ -1,0 +1,21 @@
+package com.company;
+import java.util.Scanner;
+
+public class factorialrec {
+    static int factorial(int a){
+        if(a==1 || a==0)
+        {
+            return 1;
+        }
+        return a*factorial(a-1);
+
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number");
+        int a = sc.nextInt();
+        System.out.printf("Factorial of %d is %d",a,factorial(a));
+
+    }
+}
