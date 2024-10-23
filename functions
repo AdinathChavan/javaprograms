@@ -1,0 +1,23 @@
+package com.company;
+
+public class variablefunction {
+    public static int Addition(int x, int y) {
+        return x + y;
+    }
+
+    public int substraction(int x, int y) {
+        return x - y;
+    }
+
+    int multiplication(int x, int y) {
+        return x * y;
+    }
+
+    public static void main(String[] args) {
+    variablefunction s1 = new variablefunction();
+        System.out.println(s1.multiplication(12,23));
+        System.out.println(Addition(12,24));
+        System.out.println(s1.substraction(34,56));
+
+    }
+}
