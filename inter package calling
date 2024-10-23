@@ -1,0 +1,9 @@
+package Javatutorials;
+import com.company.factorial;
+public class Interpackage {
+    public static void main(String[] args) {
+        factorial news = new factorial();
+        System.out.println("Factorial is " + news.factorials(5));
+      }
+    }
+
