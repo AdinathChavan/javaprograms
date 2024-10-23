@@ -1,0 +1,9 @@
+package Javatutorials;
+import com.company.variablefunction;
+
+public class Program1 {
+    public static void main(String[] args) {
+        variablefunction program = new variablefunction();
+        System.out.println(program.substraction(45,23));
+        System.out.println(variablefunction.Addition(2345,3143));
+    }
