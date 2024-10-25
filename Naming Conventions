@@ -1,0 +1,11 @@
+package Javatutorials;
+
+public class namingconventions {
+    public static void main(String[] args) {
+        /* Naming convention for
+        1) Variables/Methods - Use Camel Case method ( studentInfo)
+        2) Package name - in lower case
+        3) Class name - Every letter of word should be in capital letter(StudentInfoComputer)
+         */
+    }
+}
