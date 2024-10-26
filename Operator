@@ -1,0 +1,10 @@
+package Apnacollege.code;
+
+public class Tf {
+    public static void main(String[] args) {
+        int a = 123;
+        int b = 231;
+        System.out.println(a>b);
+        System.out.println(b>a);
+    }
+}
