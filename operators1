@@ -1,0 +1,18 @@
+package Javatutorials.com.Javatutorials;
+
+public class operators {
+    public static void main(String[] args) {
+        int a = 2345, b = 4562;
+       boolean result;
+       result = a>2000 && b>4000; // both are true then return true
+        System.out.println(result);
+        boolean result1 = a>5000 || b<4590;// any one true then return true
+        System.out.println(result1);
+        int c = 20;
+        int r = 456;
+        System.out.println(++c + --r);
+
+
+
+    }
+}
