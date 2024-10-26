@@ -1,0 +1,14 @@
+package Javatutorials;
+
+public class ternary {
+    public static void main(String[] args) {
+        // if person have percentage greater than 70 and male then is eligible otherwise false
+        int percentage = 78;
+        char gender = 'M';
+        String result = percentage>70 && gender == 'M' ?  "Eligible" : "Not Eligible";
+        System.out.println(result);
+        String result1 = percentage >80 && gender =='F' ? "Eligible"  : "Not Eligible";
+        System.out.println(result1);
+
+    }
+}
