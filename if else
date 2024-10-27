@@ -1,0 +1,15 @@
+package Javatutorials;
+
+public class ifelse {
+    public static void main(String[] args) {
+        String name = "indian";
+        int mobile = +92;
+        String gender = "male";
+        if( name == "indian" && (mobile == +91) && (gender =="male" || gender == "Female") ){
+            System.out.println("Namaste  welcome in india");
+        }
+        else {
+            System.out.println("You are not Indian");
+        }
+    }
+}
