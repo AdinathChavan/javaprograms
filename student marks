@@ -1,0 +1,21 @@
+package Javatutorials;
+import java.util.Scanner;
+
+public class studentmarks {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your marks ");
+        int a = sc.nextInt();
+        if(a>85)
+        {
+            System.out.println("You would get admission for Science ");
+
+        }
+        else if (a>70) {
+            System.out.println("You would get admission for Commerce");
+        }
+        else{
+            System.out.println("You get admission for Arts");
+        }
+    }
+}
