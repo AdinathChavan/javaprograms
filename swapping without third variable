@@ -1,0 +1,15 @@
+package Javatutorials;
+
+public class swap {
+
+    public static void main(String[] args){
+        int  a = 233;
+        int b = 342;
+       a = a+b;
+       b = a-b;
+       a = a-b;
+        System.out.println(a);
+        System.out.println(b);
+
+    }
+}
