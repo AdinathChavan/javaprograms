@@ -1,0 +1,18 @@
+package Javatutorials;
+import java.util.Scanner;
+
+public class cricket {
+    public void record( String name){
+        System.out.printf("Information of %s\n",name);
+        System.out.println("KPL season -7");
+        System.out.println("Team Aaradhya Angels");
+
+    }
+    public static void main(String[] args){
+        Scanner sc  = new Scanner(System.in);
+        System.out.println("Enter player name ");
+        String name = sc.next();
+       cricket one = new cricket();
+       one.record(name);
+    }
+}
