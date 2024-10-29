@@ -1,0 +1,70 @@
+import java.util.Scanner;
+
+public class javac{
+     static void companyverify(String []company, int a) {
+         System.out.println("---------Company verification---------");
+         System.out.println("Enter your company name");
+         Scanner s = new Scanner(System.in);
+         String b = s.next();
+         for (int i = 0; i < a; i++) {
+             if (company[i].equals(b)) {
+                 System.out.println("Company verification Successfull");
+                loanverify.service();
+                 break;
+             } else {
+                 System.out.println("Not verified, please enter verified company name");
+                 break;
+             }
+         }
+     }
+public class loanverify{
+     public static void service(){
+        Scanner k  = new Scanner(System.in);
+        System.out.println("--------LOAN CHECKER--------");
+        System.out.println("Enter your cibil score");
+        int h = k.nextInt();
+        if(h<500)
+        {
+            System.out.println("you cannot get loan");
+        }
+        else if(h>=500 && h<=599)
+        {
+            System.out.println("you get loan, but you have to verify");
+            System.out.println("income");
+            System.out.println("bank balance");
+            System.out.println("credit card and debit card");
+        }
+        else if(h>=600 && h<=699)
+        {
+            System.out.println("you get loan, please verify");
+            System.out.println("income");
+        }
+        else if(h>=700 && h<=750)
+        {
+            System.out.println("Congratulation you get loan");
+        }
+        else
+        {
+            System.out.println("sorry cannot get loan");
+        }
+    }
+    }
+
+
+
+}
+    public static void main(String[] args) {
+        System.out.println("--------Company Loan Checker--------");
+        System.out.println("Total no of companies");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        String [] company = new String[a];
+        System.out.println("Enter the names of company");
+        for(int i=0; i<a; i++)
+        {
+           company[i] = sc.next();
+        }
+
+        javac.companyverify(company, a);
+}
+
