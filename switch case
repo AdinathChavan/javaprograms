@@ -1,0 +1,25 @@
+package Javatutorials;
+import java.util.Scanner;
+
+public class calcy {
+    public static void main(String[] args) {
+        System.out.println("---------Java tutorials-------");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Choose one option -  1 - sunday \n 2- Monday \n 3 - Tuesday \n");
+        int a = sc.nextInt();
+        switch(a){
+            case 1:
+                System.out.println(" Only playing cricket no anything");
+                break;
+            case 2:
+                System.out.println("Only study no anything");
+                break;
+            case 3:
+                System.out.println("Only coding no anything");
+                break;
+            default :
+                System.out.println("Enter valid choice");
+                break;
+        }
+    }
+}
