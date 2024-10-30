@@ -1,0 +1,53 @@
+
+import java.util.Scanner;
+
+public class gpcalculator {
+    public static void MarkstoPercentage(){
+        Scanner marks = new Scanner(System.in);
+        System.out.println("Marks to Percentage Calculator");
+        System.out.println("Total marks");
+        float a = marks.nextFloat();
+        System.out.println("Obtained marks");
+        float b = marks.nextFloat();
+        float c = b/a*100;
+        System.out.printf("You got %.2f",c);
+    }
+
+    public static void  PercentagetoGrade(){
+        System.out.println("Percentage to Grade Calculator");
+        Scanner per = new Scanner(System.in);
+        System.out.println("Enter your Percentage");
+        float d = per.nextFloat();
+        if(d>=90.00) {
+            System.out.println("Grade - A");
+            }
+            else if ( d<=89 && d>=80){
+            System.out.println("Grade -B");
+            }
+            else if( d<=79 && d>= 60){
+            System.out.println("Grade -C");
+            }
+            else if( d<=59){
+            System.out.println("Fail");
+        }
+    }
+
+    }
+
+
+
+    public static void main(String[] args) {
+        System.out.println("Marks to Percentage or Percentage to grade Calculator");
+        System.out.println("Please Select    Marks to Percentage-1\n  Percentage to grade-2\n ");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        switch(a){
+            case 1 :gpcalculator.MarkstoPercentage();
+            break;
+            case 2: gpcalculator.PercentagetoGrade();
+            break;
+            default:
+                System.out.println("Enter valid choice");
+        }
+
+}
