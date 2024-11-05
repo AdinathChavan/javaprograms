@@ -1,0 +1,20 @@
+package Apnacollege.code;
+import java.util.Scanner;
+
+class mydetails{
+    int a;
+    float marks;
+    String Name;
+
+};
+public class newclass{
+    public static void main(String[] args) {
+        mydetails adinath = new mydetails();
+        adinath.a = 3552;
+        adinath.marks = 2341.f;
+        adinath.Name = "Adinath Chavan";
+        System.out.println(adinath.a);
+        System.out.println(adinath.marks);
+        System.out.println(adinath.Name);
+    }
+}
