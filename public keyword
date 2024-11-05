@@ -1,0 +1,17 @@
+package Apnacollege.code;
+class adinath{
+    static int mysalary(){
+        return 23454;
+    }
+}
+
+public class flow {
+    static int myrollno(){
+        return 04;
+    }
+
+    public static void main(String[] args) {
+        System.out.printf("hello %d",myrollno());
+        System.out.printf("salary is %d",adinath.mysalary());
+    }
+}
