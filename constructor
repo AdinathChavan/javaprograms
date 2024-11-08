@@ -1,0 +1,13 @@
+package Javatutorials;
+
+public class constructor {
+    public constructor(){
+        System.out.println("This is constructor.....");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("This is main method........");
+        constructor app = new constructor();
+        constructor news = new constructor();
+    }
+}
