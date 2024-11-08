@@ -1,0 +1,10 @@
+----------Looping statements----------
+
+1 - FOR loop -
+  In for loop we just iterating the values we cannot use the iterated last value outside the loop.
+2-  WHILE loop- 
+  Logic should executed after checking the condition.
+  In while loop we can use last iterated value in program hence while loop is used.
+3- DO-WHILE loop -
+  logic should executed before checking the condition.
+  Just iterating like other loops
