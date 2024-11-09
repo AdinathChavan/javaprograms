@@ -1,0 +1,21 @@
+package Javatutorials;
+import java.util.Scanner;
+
+public class additionarray {
+    public static void main(String[] args) {
+        int []a = new int[5];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter array elements");
+        for(int i=0; i<5; i++)
+        {
+            a[i]= sc.nextInt();
+        }
+        int sum = 0;
+        for(int i=0; i<5; i++)
+        {
+            sum = a[i]+sum;
+        }
+        System.out.printf("Addition of elements is %d",sum);
+
+    }
+}
