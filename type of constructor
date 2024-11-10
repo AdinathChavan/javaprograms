@@ -1,0 +1,19 @@
+package Javatutorials;
+
+public class employee {
+    public employee(){
+        System.out.println("This is default constructor"); // default constructor
+    }
+    public employee(int id){
+        System.out.printf("Id of the employee is %d\n", id);// parameterized constructor 1
+    }
+    public employee(String name, long salary){
+        System.out.printf("Name of employee %s and salary is %d\n",name, salary);// parameterized constructor 2
+    }
+
+    public static void main(String[] args) {
+        employee e1 = new employee();
+        employee e2 = new employee(234);
+        employee e3 = new employee("Adinath", 235312);
+    }
+}
