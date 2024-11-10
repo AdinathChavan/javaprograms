@@ -1,0 +1,19 @@
+package Javatutorials;
+
+public class array {
+    public static void main(String[] args){
+        String[] friends = { "Adi","dhiraj","Ajay","kiran","abhishek","swaraj","pranav"};
+        for(String name : friends){
+            System.out.printf("%s\n",name);
+        }
+        System.out.printf("Friend at the first position %s\n",friends[0]);
+        System.out.printf("Friend at the last position %s\n",friends[6]);
+
+        System.out.println("------------Printing in reverse manner-------------");
+        for(int i=6; i>=0; i--)
+        {
+            System.out.printf("Hello %s\n",friends[i]);
+        }
+    }
+
+}
