@@ -1,0 +1,21 @@
+package Javatutorials;
+
+public class constructors {
+    public constructors(){
+
+    }
+    public constructors(String name, int rollno){
+        System.out.printf("Name of the student is %s\n " , name);
+        System.out.printf("Roll no of the student is %d \n", rollno);
+    }
+    public constructors(String name){
+        System.out.printf("Student selected is %s\n ", name );
+
+    }
+    public static void main(String[] args) {
+        constructors c = new constructors();
+        constructors c1 = new constructors("Adinath", 231);
+        constructors c2 = new constructors("Adinath");
+
+    }
+}
