@@ -1,0 +1,17 @@
+package com.company;
+import java.util.Scanner;
+
+public class breakandcontinue {
+    public static void main(String[] args)
+    {
+        int i=0;
+        do{
+            System.out.println(i);
+            if(i==5){
+                System.out.println("Loop end");
+                break;
+            }
+            i++;
+        }while(i<=10);
+    }
+}
