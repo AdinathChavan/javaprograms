@@ -1,0 +1,30 @@
+package Javatutorials;
+
+public class assignment {
+    public static void largestelement(int []a){
+        for(int i=0; i<a.length; i++)
+        {
+            if(a[0]<a[i])
+            {
+                a[0]=a[i];
+            }
+        }
+        System.out.printf("Largest element is %d\n",a[0]);
+    }
+    public static void smallestelement(int []b){
+        for(int i=0; i<b.length; i++)
+        {
+            if(b[0]>b[i])
+            {
+                b[0]=b[i];
+            }
+        }
+        System.out.printf("smallest element is %d",b[0]);
+
+    }
+    public static void main(String[] args){
+        int []array ={ 232,33,4344,3,43,4,54,5,65746};
+        largestelement(array);
+        smallestelement(array);
+    }
+}
