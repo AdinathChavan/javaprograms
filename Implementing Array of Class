@@ -1,0 +1,47 @@
+package Javatutorials;
+import java.util.Scanner;
+
+public class arrayofclass {
+    int rollno = 0;
+    String name = "ac";
+    float percentage = 54.89f;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        arrayofclass[] secondyear = new arrayofclass[5];
+        secondyear[0]= new arrayofclass();
+        secondyear[1]= new arrayofclass();
+        secondyear[2]= new arrayofclass();
+        secondyear[3]= new arrayofclass();
+        secondyear[4]= new arrayofclass();
+
+
+
+        for(int i=0; i<5; i++)
+        {
+            System.out.printf("Enter the details of the student %d\n",i+1);
+            System.out.println("roll no of the student");
+            secondyear[i].rollno = sc.nextInt();
+            System.out.println("Name of the student");
+            secondyear[i].name= sc.next();
+            System.out.println("Percentage obtained");
+            secondyear[i].percentage= sc.nextFloat();
+        }
+        method(secondyear);
+
+
+    }
+    public static void method(arrayofclass []secondyear){
+        System.out.println("----------------Printing information of the students of second year-----------------");
+        Scanner s = new Scanner(System.in);
+        for(int i=0; i<5; i++)
+        {
+            System.out.printf("details of the student %d\n",i+1);
+            System.out.printf("roll no of the student %d\n",secondyear[i].rollno);
+            System.out.printf("Name of the student %s\n",secondyear[i].name);
+            System.out.printf("Percentage obtained %.2f\n", secondyear[i].percentage);
+        }
+
+    }
+
+}
