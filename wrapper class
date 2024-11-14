@@ -1,0 +1,10 @@
+package WrapperClasses.com.Wrapperclasses;
+
+public class first {
+    public static void main(String[] args) {
+
+        Integer age = Integer.valueOf(45);
+        Character c = Character.valueOf('c');
+        Byte b = Byte.valueOf((byte) 23);
+    }
+}
