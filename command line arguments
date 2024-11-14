@@ -1,0 +1,12 @@
+package Javatutorials;
+
+public class commandlinearguments {
+    public static void main(String[] args) {
+        System.out.println("Main method");
+        System.out.printf("No of the argumeents is %d\n",args.length);
+        for (String name : args)
+        {
+            System.out.println(name);
+        }
+    }
+}
