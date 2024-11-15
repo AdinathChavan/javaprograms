@@ -1,0 +1,13 @@
+package WrapperClasses.com.Wrapperclasses;
+
+public class boxing {
+    public static void main(String[] args) {
+        Integer age = 23;
+        int c = age;//Unboxing
+        System.out.println(c);
+
+        int d = 234;
+        Integer e = d;//Autoboxing
+        System.out.println(e);
+    }
+}
