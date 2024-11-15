@@ -1,0 +1,16 @@
+package WrapperClasses.com.Wrapperclasses;
+
+public class staticblocks {
+    static{
+        System.out.println("-------This is Static block-------");
+        int a = 234;
+        int b = 978;
+        int c = a+b;
+        System.out.println("Sum is "+c );
+        //static blocks are which blocks they are execute before the main method
+    }
+
+    public static void main(String[] args) {
+        System.out.println("This is main method");
+    }
+}
