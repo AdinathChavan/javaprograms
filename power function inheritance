@@ -1,0 +1,19 @@
+package Apnacollege.code;
+import java.util.Scanner;
+import static java.lang.Math.pow;
+
+public class user extends sum {
+    static double function(int a,int b){
+        System.out.println("Addition is "+addition(23,345));
+        return pow(a,b);
+
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the numbers ");
+        int a = sc.nextInt();
+        int b= sc.nextInt();
+        System.out.printf("Answer is %.0f",function(a,b));
+    }
+}
