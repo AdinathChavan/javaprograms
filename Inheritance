@@ -1,0 +1,14 @@
+package OOP;
+
+public class B extends A {// here B is base/derived/child class 
+    public void multiplication(){
+        System.out.println("This is multiplication class B");
+        addition();//accessing class A method 
+        substraction();// accessing class A method
+    }
+
+    public static void main(String[] args) {
+        B two = new B();
+        two.multiplication();
+    }
+}
