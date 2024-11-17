@@ -1,0 +1,15 @@
+package OOP;
+
+public class upi extends creditcard {
+    public void upidetails(){
+        System.out.println("Your upi details");
+        Netbanking();
+        debitcarddetails();
+        Creditcarddetails();
+    }
+    public static void main(String[] args) {
+        upi u = new upi();
+        u.upidetails();
+
+    }
+}
