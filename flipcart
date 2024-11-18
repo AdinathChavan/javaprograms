@@ -1,0 +1,33 @@
+package OOP;
+import java.util.Scanner;
+
+public class Flipcart {
+    public static void main(String[] args) {
+        System.out.println("-------------Flipcart Payment Methods----------------");
+        System.out.println(" Choose payment option ");
+        System.out.println( " 1 - Netbanking\n 2 - Credit card\n 3 - Debit card\n 4 - UPI\n ");
+        Scanner sc = new Scanner(System.in);
+        int payment = sc.nextInt();
+        PaymentFour paymentoption = new PaymentFour();
+        String result = null;
+        switch(payment)
+        {
+            case 1 :
+                result = paymentoption.Netbanking();
+            break;
+            case 2 :
+               result =  paymentoption.CreditCard();
+            break;
+            case 3 :
+                 result = paymentoption.Debitcard();
+            break;
+            case 4 :
+                result =paymentoption.Upi();
+            break;
+            default :
+                System.out.println("Enter valid choice");
+
+        }
+        System.out.println(result);
+    }
+}
