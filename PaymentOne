@@ -1,0 +1,29 @@
+package OOP;
+import java.util.Scanner;
+
+public class PaymentOne {
+    public String Netbanking(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your Bank account number");
+        String accountno = sc.next();
+        if(accountno.length() == 15)
+        {
+            System.out.print("");
+        }
+        else
+        {
+            System.out.println("Enter valid account no a(15 digit)");
+        }
+        System.out.println("Enter your IFSC code(12 digit)");
+        String ifsccode = sc.next();
+        if(ifsccode.length()== 12)
+        {
+            System.out.print("");
+        }
+        else
+        {
+            System.out.println("Enter valid IFSC code ");
+        }
+        return "Payment Successful . Thank you !";
+    }
+}
