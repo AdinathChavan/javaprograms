@@ -1,0 +1,22 @@
+package OOP;
+
+import java.util.Scanner;
+
+public class PaymentFour extends PaymentThree {
+    public String Upi(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your UPI id (12 digit)");
+        String upiid = sc.next();
+        if(upiid.length() == 12)
+        {
+            System.out.print("");
+        }
+        else
+        {
+            System.out.println("Enter valid UPI id");
+        }
+
+        return "Payment Successful . Thank you !";
+    }
+}
+
