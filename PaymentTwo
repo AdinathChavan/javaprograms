@@ -1,0 +1,67 @@
+package OOP;
+
+import java.util.Scanner;
+
+public class PaymentTwo extends PaymentOne {
+    public String CreditCard() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Credit card number (15 digit)");
+        String creditcardno = sc.next();
+        if (creditcardno.length() == 15) {
+            System.out.print("");
+        } else {
+            System.out.println("Enter valid credit card no");
+        }
+        System.out.println("Enter your password (5 digit)");
+        String password = sc.next();
+        if (password.length() == 5) {
+            System.out.print("");
+        } else {
+            System.out.println("Enter valid password ");
+        }
+        System.out.println("Enter expiry date of your Credit card :MM/YY ");
+        System.out.print("Month - ");
+        String month = sc.next();
+        String slash = sc.next();
+        System.out.println("Year - ");
+        String year = sc.next();
+
+        int [] months = { 1,2,3,4,5,6,7,8,9,10,11,12};
+        int [] years = { 24,25,26,27,28,29,30};
+
+        int monthscheck = Integer.valueOf(month);
+        int yearcheck = Integer.valueOf(year);
+
+        boolean mcheck = false;
+        for( int mon : months)
+        {
+            if(mon == monthscheck)
+            {
+                System.out.println("");
+                mcheck = true;
+            }
+        }
+        boolean ycheck = false;
+        for(int yea : years)
+        {
+            if(yea == yearcheck)
+            {
+                System.out.println("");
+                ycheck = true;
+            }
+        }
+
+        if(mcheck && ycheck)
+        {
+            System.out.println("valid date and year.... Expiry check successfully");
+
+        }
+        else {
+            System.out.println("invalid month and year ");
+            return "Please enter valid month and year!";
+
+        }
+        return "Payment Successful . Thank you !";
+    }
+
+}
