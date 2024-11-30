@@ -1,0 +1,38 @@
+package Apnacollege.code;
+import java.util.Scanner;
+
+public class bitstuffing {
+    public static void stuffing(int []data){
+        int count = 0;
+        for(int i=0; i<16; i++)
+        {
+            if(data[i]==1)
+            {
+                count++;
+                System.out.printf("%d",data[i]);
+            }
+            else {
+                System.out.printf("%d",data[i]);
+                count = 0;
+            }
+            if(count == 5) {
+                System.out.printf("0");
+                count =0;
+            }
+        }
+
+
+    }
+
+    public static void main(String[] args) {
+        int []data = new int[16];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter bits one by one");
+        for(int i=0; i<16; i++)
+        {
+            data[i]= sc.nextInt();
+        }
+        bitstuffing.stuffing(data);
+
+    }
+}
