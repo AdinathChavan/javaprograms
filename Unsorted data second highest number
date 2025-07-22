@@ -1,0 +1,29 @@
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
+public class UnsortedHighestNumber {
+
+    public static void main(String[] args) {
+        int [] numbers = { 12,53,1,36,999,625,90,62,743,0,473,3666};
+
+        IntStream data  = Arrays.stream(numbers);
+
+        int[] sorteddata = data.sorted().toArray();
+
+
+        System.out.println("Sorted data ..........");
+        for(int i=0; i<sorteddata.length; i++){
+            System.out.println(sorteddata[i]);
+        }
+
+
+
+        int secondHighestNumber= sorteddata[sorteddata.length-2];
+
+        System.out.println("second highest number is : "+secondHighestNumber);
+
+
+
+
+    }
+}
