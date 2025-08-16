@@ -1,0 +1,50 @@
+import java.util.Arrays;
+import java.util.Random;
+import java.util.stream.IntStream;
+
+public class LoterySystem {
+
+
+    public static void main(String[] args) {
+        int[] array = new int[11];
+        int[] twoDigit = new int[11];
+
+        int[] lotteryNumber = new int[11];
+
+        Random number = new Random();
+
+        System.out.print(" All Loterry Numbers :  ");
+
+        for(int i=0; i<11; i++){
+            array[i]= number.nextInt(9000)+1000;
+            twoDigit[i]=number.nextInt(89)+10;
+
+            lotteryNumber[i]= array[i]*twoDigit[i];
+            System.out.print(lotteryNumber[i]+"  ");
+
+        }
+
+        System.out.println("\n ");
+
+        IntStream findNumber = Arrays.stream(lotteryNumber);
+         int[] sortedNumbers = findNumber.sorted().toArray();
+
+        System.out.println("Ascending Order number :  ");
+
+        for(int i=0; i<11; i++){
+            System.out.print(sortedNumbers[i]+" ");
+        }
+
+        int middle = sortedNumbers.length/2;
+        System.out.println("\n");
+
+        System.out.println("First prize winner : "+sortedNumbers[middle]);
+
+        System.out.println("Second prize winner : "+sortedNumbers[middle-1]);
+
+        System.out.println("Third prize winner : "+sortedNumbers[middle+1]);
+
+
+
+    }
+    }
